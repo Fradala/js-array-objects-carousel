@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+main > section.wrapper{
+    width: 60%;
+    height: 500px;
+    position: relative;
+
+}
+
+section.wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+}
+section.wrapper img.active{
+    display: inline-block;
+}
+
+
+button{
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-50%);
+}
+
+.bottone-up{
+    top: .5rem;
+}
+
+.bottone-down{
+    bottom: .5rem;
+}
