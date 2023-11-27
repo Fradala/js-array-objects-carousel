@@ -44,9 +44,14 @@ button{
 }
 
 .bottone-up{
-    top: .5rem;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bottone-down{
     bottom: .5rem;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
