@@ -29,11 +29,11 @@ const images = [
 
 
 const wrapperElement = document.querySelector('section.wrapper')
-
+let immagini = images
 for (let i = 0; i < images.length; i ++) {
-    const image = images[i]
+    console.log(immagini, i)
     const newImageElement = document.createElement('img')
-    newImageElement.src = image[i];
+    newImageElement.src = images.image;
     wrapperElement.appendChild(newImageElement)
 }
 
@@ -56,3 +56,4 @@ upButton.addEventListener('click', function(){
     activeindex = activeindex - 1;
     imageElements[activeindex].classList.add('active');
 })
+
